@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About PEC</title>  <!-- ENTER PAGE TITLE -->
+    <link rel="icon" href="../img/icon.png">
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="apple-touch-icon" href="../img/icons/150px.png" />
+    <link rel="apple-touch-icon" href="../img/icons/300px.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#2e8690" />
+    <meta name="theme-color" content="#2e8690" />
+    <meta name="Description" content="Pondicherry Engineering College (PEC) is an Autonomous Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan.">
+
+    <link rel="stylesheet" href="../css/new-material.css" class="styleload" media="all" disabled>
+    <link rel="stylesheet" href="../css/bootstrap4.css" class="styleload" media="all" disabled>
+    <link rel="stylesheet" href="../css/header.css" class="styleload" media="all" disabled>
+    <link rel="stylesheet" href="../css/footer.css" class="styleload" media="all" disabled>
+    <link rel="stylesheet" href="../css/menu.css" class="styleload" media="all" disabled>
+    <link rel="stylesheet" href="../css/main.css" class="styleload" media="all" disabled>
+
+    <link rel='dns-prefetch' href='https://maps.googleapis.com'>
+    <link rel='dns-prefetch' href='https://fonts.googleapis.com/' >
+    <link rel='dns-prefetch' href="https://khms1.googleapis.com/">
+
+    <script defer src="../js/jquery.min.js"></script>
+    <script defer src="../js/materialize.min.js"></script>
+    <script defer src="../js/bootstrap4.js"></script>
+    <script defer src="../js/menu.js"></script>
+    <script async src="../js/pace.js"></script>
+
+<!--ADD CUSTOM IMPORTS HERE use convention-->
+    <!-- <link rel="stylesheet" href="enter link" class="styleload" media="all" disabed> -->
+    <!-- <script defer src="enter link"></script> -->
+    <link rel="stylesheet" href="../css/oswald.css" class="styleload" media="all" disabled>
+    
+
+<!--custom imports ends-->
+    <style>
+        main{
+            opacity: 0; 
+            transition: opacity 3s;
+        }
+        floatbtn{
+            opacity: 0; 
+            transition: opacity 3s;
+        }
+        header{
+            opacity: 0; 
+            transition: opacity 3s;
+        }
+        footer{
+            opacity: 0; 
+            transition: opacity 3s;
+        }
+        ul {
+            list-style-type: none;
+        }
+        
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        main {
+            flex: 1;
+        }
+        ::-webkit-scrollbar {
+            width: 0.35em;
+        }
+        
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background-color: #707070;
+            border-radius: 8px;
+            outline: 1px solid #f8f8f8;
+        }
+        /*load progress bar*/
+        .pace {
+          -webkit-pointer-events: none;
+          pointer-events: none;
+
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+
+        .pace-inactive {
+          display: none;
+        }
+
+        .pace .pace-progress {
+          background: #2e8690;
+          position: fixed;
+          z-index: 2000;
+          top: 0;
+          right: 100%;
+          width: 100%;
+          height: 2px;
+        }
+
+        /*ENTER INLINE CONTENT CSS*/
+        .our-title{
+            font-family:Oswald;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .divider{
+            height:3px;
+            margin: 5px -1% 20px -1%;
+            width: 102%;
+            background-color: #2e8690;
+        }
+        .our-content{
+            font-size:18px;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+        .nirf{
+            background-color: #f8f8f8;
+            padding:20px 30px;
+        }
+        .nirf-title{
+            font-family:Oswald;
+            font-size: 25px;
+        }
+        .nirf-content{
+            padding-top: 15px;
+            text-align:justify;
+        }
+        
+        .accred{
+            border: 2px solid #000;
+            padding:5px 30px 5px 10px;
+            font-weight:bold;
+            font-size: 18px;
+            cursor: pointer;
+            margin:20px 0;
+            transition: all .5s;
+        }
+        .accred:hover{
+            padding:5px 10px 5px 30px;
+            background-color: #000;
+            color:#fff;
+        }
+        .youtube {
+            position: relative;
+            padding-bottom: 55%;
+            height: 0;
+            overflow: hidden;
+        }
+        .youtube iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+        }
+        .college-comp{
+            width:104%;
+            margin:30px -2%;
+        }
+        .about-hyper{
+            text-align:justify;
+            font-size:18px;
+            margin-top:10px;
+            margin-bottom:30px;
+        }
+        .hyper{
+            width:100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .hyper btn{
+            color: #999;
+            cursor: pointer;
+        }
+        .hyper btn:hover{
+            color:#000;
+            text-decoration: underline;
+        }
+        .cht-head{
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding:10px;
+            margin:30px 0;
+            text-align: center;
+            font-weight:600;
+            font-size: 25px;
+            font-family: Oswald;
+        }
+
+        /*content css ends*/
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            var imports = document.querySelectorAll(".styleload");
+            imports.forEach((imp)=>{
+                imp.removeAttribute("disabled");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container-dim container-fluid">
+            <div class="row" id="row-top-margin">
+                <a href="http://pec.edu" class="logo-container">
+                    <img class="logo" src="../img/logo.png" alt="logo_image" width="100">
+                </a>
+                <div class="pec-name" id="dept-name">
+                    <h4 class="dept-name-text">Pondicherry Engineering College</h4>
+                    <h4 class="dept-of"><i>An Autonomus Institute under Govt. of Puducherry</i></h4>
+                </div>
+                <div class="search-box" style="position: absolute;top:0px;right: 80px;padding-top: 0px;">
+                    <form>
+                        <input class="search-bar" id="focusChk" type="text" placeholder="Search" style="top: 50px;">
+                        <img src="../img/search.svg" style="margin:33px 10px;" alt="search">
+                    </form>
+                </div>
+                <a data-toggle="collapse" href="#collapseMenu">
+                    <div class="container menu-icon" id="overlay" onclick="change()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
+                <div class="mob-btn">
+                    <img src="../img/search.svg" data-toggle="collapse" href="#collapseSearch" onclick="focusS()" style="margin-bottom: 10px" alt="search">
+                    <div data-toggle="collapse" class="menu-icon" href="#collapseMenu" onclick="change()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="margin: 0 2%;border-width: 2px;box-shadow: 0 3 6 #0003">
+    <div class="collapse" id="collapseSearch">
+        <div style="display:flex;justify-content: center">
+            <input id="focus" type="text" style="padding-left:10px;width: 80%;" placeholder="Enter search text here...">
+        </div>
+    </div>
+    <div class="pec-menu collapse" id="collapseMenu">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-3 col-6" id="menu-col-1">
+                    <ul>
+                        <li onclick="location.href='https://peciis.info/PECMIS/';">IIS</li>
+                        <li onclick="location.href='http://tnp.pec.edu/';">Placement</li>
+                        <li onclick="location.href='http://research.pec.edu/';">Research</li>
+                        <li onclick="location.href='../home/admission.html';">Admission</li>
+                        <li onclick="location.href='http://academics.pec.edu/';">Academics</li>
+                        <li onclick="location.href='http://www.pec.edu/alumni.php';">Alumni</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6" id="menu-col-2">
+                    <ul>
+                        <li class="menu2" onclick="location.href='../home/about-pec.html'"; onmouseover="menu(this,'about')">About</li>
+                        <li class="menu2" onclick="location.href='../home/gallery.php'"; onmouseover="menu(this,'gallery')">Gallery</li>
+                        <li class="menu2" onmouseover="menu(this,'oncampus')">On&nbsp;Campus<img src="../img/forward.svg" class="forward" alt=">"></li>
+                        <li class="menu2" onmouseover="menu(this,'departments')">Departments<img src="../img/forward.svg" class="forward" alt=">"></li>
+                        <li class="menu2" onclick="location.href='../home/administration.html'"; onmouseover="menu(this,'administration')">Administration</li>
+                        <li class="menu2" onclick="location.href='http://www.teqip.pec.edu/'"; onmouseover="menu(this,'teqip')">TEQIP</li>
+                    </ul>
+                </div>
+                <div id="menu2-cover"> <button onclick="goBack()"> <img src="../img/go-back.svg" alt="go-back" > </button> </div>
+                <div class="col-lg-3 col-6" id="menu-col-3">
+                    <p class="menu-about">Pondicherry Engineering College (PEC) is an Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan. It is an autonomous Institution for the purposes of administration,
+                        staff recruitment and college development and is managed by a Board of Governors.</p>
+                </div>
+                <div class="col-lg-3 col-6" id="menu-col-4">
+                    <img class="aboutimg" src="../img/about.jpg" alt="college-img" style="width:18vw">
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <main>
+        <crumbs id="pec-crumb" class="pec-crumb"></crumbs>
+        
+        <div class="watermark">
+
+        </div> 
+        <!--ENTER MAIN CONTENT HERE-->
+
+        <div class="container-fluid" style="padding:10px 2%">
+            <div class="our-title">OUR VISION</div>
+            <div class="divider"></div>
+            <div class="our-content">
+                To foster prosperity through technology by means of education, innovation and collaborative research and emerge as a world-class technical institution.
+            </div>
+            <div class="our-title">OUR MISSION</div>
+            <div class="divider"></div>
+            <div class="our-content">
+                • To create and disseminate knowledge for the betterment of mankind in general and rural masses in particular.<br>
+                • To impart high quality training to students so as to provide human resource appropriate to the local and national needs.<br>
+                • To establish Centres of Excellence in collaboration with industries, research laboratories and other agencies to meet the changing needs of society.
+            </div>
+            <hr>
+            <a href="../img/pec-download-logo.png" target="blank">Download Logo</a>
+            <a href="../img/pec-download-watermark.png" target="blank">| Watermark</a><hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="nirf">
+                        <div class="nirf-title">NIRF Ranking</div>
+                        <div class="nirf-content">
+                            The National Institutional Ranking Framework (NIRF) is a methodology approved by the MHRD, Govt. of India to rank institutions across the country.  The Core Committee set up by the MHRD for NIRF ranking draws an understanding from the overall recommendations regarding each institution in India, based on various parameters. The parameters broadly cover Teaching, Learning and Resources, Research and Professional Practices, Graduation Outcomes, Outreach and Inclusivity and Perception. <b>PEC was endowed with 76th position in the All India NIRF ranking for the year 2019.</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto">
+                            <a href="http://aaa.pec.edu" target="blank" style="text-decoration:none; color:#000"><div class="accred">View Accreditations →</div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="youtube">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4MT892CmdPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <img class="college-comp" src="img/college-comp-100.jpg" pec-img="img/college-comp.jpg">
+            <div class="container about-hyper">
+               <span></span>Pondicherry Engineering College (PEC) is an institution sponsored by the Union Territory of Pondicherry, 
+                India. The College was <span txt="started">started</span> in <span txt="1984">1984</span> under the VII Five Year Plan. 
+                It is an <span txt="autonomous Institution">autonomous Institution</span> for 
+                the purposes of administration, staff recruitment and college development and is <span txt="managed by">managed by</span> a 
+                <span txt="Board of Governors">Board of Governors</span>. The College is <span txt="affiliated">affiliated</span> to <span txt="Pondicherry University">Pondicherry University</span>, Pondicherry, for academic purposes. 
+                The college campus is <span txt="situated">situated</span> in <span txt="Pillaichavadi">Pillaichavadi</span> on the shores of Bay of Bengal, 
+                <span txt="about 130 kms">about 130 kms</span> <span txt="south of Chennai."> south of Chennai.</span> The magnificent <span txt="lush green premise">lush green premise</span> along with the neatly laden roads spreads over an <span txt="area">area</span> of 
+                <span txt="210 acres">210 acres</span>. The highly equipped departments buildings accommodate <span txt="state-of-art">state-of-art</span> technical and hygiene 
+                <span txt="facilities">facilities</span>. The well-lit, airy and spacious administrative building offers a fantastic view of the sea from its 
+                many non-glazed openings in the upper floors.<span></span>
+                <div class="hyper">
+                    <btn id="callReader">Hyper-read</btn>
+                </div>
+            </div>
+        </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="cht-head">
+                Undergraduate Students (4 years course)
+            </div>
+        </div>
+        <div class="col-lg-5" style="overflow-x: auto;">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">2019-20</th>
+                    <th scope="col">2018-19</th>
+                    <th scope="col">2017-18</th>
+                    <th scope="col">2016-17</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr> 
+                    <th scope="row">Civil Engineering</th>
+                    <td>71</td>
+                    <td>70</td>
+                    <td>73</td>
+                    <td>73</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Mechanical Engineering</th>
+                    <td>96</td>
+                    <td>80</td>
+                    <td>73</td>
+                    <td>70</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Electronics & Communication Engineering</th>
+                    <td>116</td>
+                    <td>95</td>
+                    <td>72</td>
+                    <td>71</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Computer Science and Engineering</th>
+                    <td>121</td>
+                    <td>105</td>
+                    <td>71</td>
+                    <td>74</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Electrical and Electronics Engineering</th>
+                    <td>52</td>
+                    <td>64</td>
+                    <td>69</td>
+                    <td>70</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Electronics and Instrumentation Engineering</th>
+                    <td>51</td>
+                    <td>62</td>
+                    <td>59</td>
+                    <td>51</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Information Technology</th>
+                    <td>59</td>
+                    <td>63</td>
+                    <td>55</td>
+                    <td>50</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Chemical Engineering</th>
+                    <td>52</td>
+                    <td>57</td>
+                    <td>49</td>
+                    <td>56</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+        </div>
+        <div class="col-lg-7" style="display: flex;align-items: center;">
+            <canvas id="canvas1"></canvas>
+        </div>
+        <div class="col-12">
+            <div class="cht-head">
+                Postgraduate Students (2/3 years course)
+            </div>
+        </div>
+        <div class="col-lg-7" style="display: flex;align-items: center;margin-bottom:20px">
+            <canvas id="canvas2"></canvas>
+        </div>
+        <div class="col-lg-5" style="overflow-x: auto;">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">2019-20</th>
+                    <th scope="col">2018-19</th>
+                    <th scope="col">2017-18</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr> 
+                    <th scope="row">Civil Engineering: Structural Engineering (SE)</th> 
+                    <td>15</td>
+                    <td>18</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Civil Engineering: Environmental Engineering (EE)</th> 
+                    <td>11</td>
+                    <td>11</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Mechanical Engineering: Product Design & Manufacturing (PDM)</th> 
+                    <td>15</td>
+                    <td>10</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Electronics & Communication Engineering (ECE)</th> 
+                    <td>10</td>
+                    <td>11</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Electronics & Communication Engineering: Wireless Communication (WC)</th> 
+                    <td>4</td>
+                    <td>12</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Computer Science & Engineering: Distributed Computing System (DCS)</th> 
+                    <td>3</td>
+                    <td>9</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Computer Science & Engineering: Information Security (IS)</th> 
+                    <td>16</td>
+                    <td>23</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Electrical & Electronics Engineering: Electrical Drives & Control (EDC)</th> 
+                    <td>7</td>
+                    <td>9</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Mechanical Engineering: Energy Technology (ET)</th> 
+                    <td>3</td>
+                    <td>11</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Instrumentation Engineering (IE)</th> 
+                    <td>0</td>
+                    <td>0</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Information Technology (IT)</th> 
+                    <td>0</td>
+                    <td>6</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Master of Computer Applications (MCA)</th> 
+                    <td>13</td>
+                    <td>32</td>
+                    <td>35</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">Master of Science (M.Sc) (Material Science & Technology)</th> 
+                    <td>3</td>
+                    <td>0</td>
+                    <td>-</td>
+                  </tr>
+                  <tr> 
+                    <th scope="row">M.Phil.</th> 
+                    <td>0</td>
+                    <td>1</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+        </div>
+        <div class="col-12">
+            <div class="cht-head">
+                Total Students
+            </div>
+        </div>
+        <div class="col-lg-7" style="overflow-x: auto;">
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Programme</th>
+                    <th scope="col">Male</th>
+                    <th scope="col">Female</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">UG</th>
+                    <td>1514</td>
+                    <td>739</td>
+                    <td>2253</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">PG</th>
+                    <td>138</td>
+                    <td>147</td>
+                    <td>285</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Total</th>
+                    <td>1652</td>
+                    <td>886</td>
+                    <td>2538</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="col-lg-5" style="margin-bottom:20px">
+            <canvas id="canvas3"></canvas>
+        </div>
+    </div>
+
+</div>
+        <!--main content ends-->
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row row-footer-1">
+                        <div class="col-sm-7 col-md-4 col-lg-3 col-xl-3 col-footer-1">
+                            <div class="google-maps">
+                                <iframe alt="map" src="https://maps.google.com/maps?q=pondicherry%20engineering%20college&t=&z=13&ie=UTF8&iwloc=&output=embed" width="400" height="280" frameborder="0" style="border:0"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-md-3 col-lg-3 col-xl-3 col-footer-1">
+                            <p class="pp">Pondicherry Engineering College </p>
+                            <p class="pp">Pillaichavadi,</p>
+                            <p class="pp">Puducherry,</p>
+                            <p class="pp">India-605014</p>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-footer-1">
+                            <p class="pp">Ph (+91)0413-2655281</p>
+                            <p class="pp">FAX (+91)0413-2655101 </p>
+                            <p class="pp">E-Mail info@pec.edu</p>
+                            <div class="social_icon">
+                                <a alt="fb" rel="noreferrer" href="https://www.facebook.com/PEC.Pondicherry" target="_blank">
+                                    <img src="../img/facebook-square-brands.svg" href=" " class="icons" height="36" width="36" alt=""></a>
+                                <a alt="linkin" rel="noreferrer" href="https://www.linkedin.com/school/pondicherry-engineering-college/" target="_blank">
+                                    <img src="../img/linkedin-brands.svg" class="icons" height="36" width="36" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 hidden-sm-md col-lg-1 col-xl-2 col-footer-1"></div>
+                        <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-footer-1 padding_remove">
+                            <button class="contact" onclick="window.location.href='../home/contact-us.html'">CONTACT&nbsp;US</button>
+                            <div class="dotted_bordered">
+
+
+                                <p class="pp">General enquiry</p>
+                                <p class="pp">Ragging helpline</p>
+                                <p class="pp">Grievance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-2">
+                        <div class="container-fluid tb1">
+                            <div class="nested-footer-2 tb2">
+                                <div class="row row-footer-2">
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a alt="pec-old" href="http://pec.edu/" target="blank">
+                                            <p class="link-footer-2">Old&nbsp;Site</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a alt="iedc" href="https://www.peciedc.com/" target="blank">
+                                            <p class="link-footer-2">IEDC</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a alt="nirf" href="https://www.nirfindia.org/" target="blank">
+                                            <p class="link-footer-2">NIRF</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a alt="site" href="../home/sitemap.html">
+                                            <p class="link-footer-2">Sitemap</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a alt="about" href="../home/about-us.html">
+                                            <p class="link-footer-2">About Site</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a alt="disclaimer" href="../home/disclaimer.html">
+                                            <p class="link-footer-2">Disclaimer</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script>
+        let link = window.location.href;
+        link = link.replace('http://','');
+        link = link.replace('https://','');
+        let crumbs = link.split('/');
+        let a = 'http:/';
+        crumbs.forEach((crumb,i)=>{
+            a+='/'+crumb;
+            if(i<crumbs.length-1)
+                if(crumbs[i+1]!="")
+                    document.getElementById('pec-crumb').innerHTML+='<a class="pec-crumb-item" href="'+a+'">'+ crumb + '</a>&nbsp;/&nbsp;';
+                else
+                    document.getElementById('pec-crumb').innerHTML+=crumb.split('.')[0];
+            else
+                document.getElementById('pec-crumb').innerHTML+=crumbs[crumbs.length-1].split('.')[0];
+        });
+
+        window.onload = function() {
+            const images = document.querySelectorAll('[pec-img]');
+            images.forEach((image)=>{
+                $.ajax({
+                    url: image.getAttribute('pec-img'),
+                    cache:false,
+                    xhr:function(){
+                        var xhr = new XMLHttpRequest()
+                        xhr.responseType= 'blob'
+                        return xhr
+                    },
+                    success: function(data){
+                        var url = window.URL || window.webkitURL
+                        image.src = url.createObjectURL(data)
+                    }
+                })
+            })
+        }
+        const btn = document.querySelector('#callReader')
+        btn.addEventListener('click',hyperRead)
+        function hyperRead(){
+            let htime,index = 0
+            const hypers = document.querySelector('.about-hyper').querySelectorAll('span')
+            btn.removeEventListener('click',hyperRead)
+            htime = window.setInterval(function(){
+                window.running = true
+                hypers[index].style.backgroundColor = "white"
+                index++
+                hypers[index].style.backgroundColor = "yellow"
+                if(index==hypers.length-1){
+                    clearInterval(htime)
+                    btn.addEventListener('click',hyperRead)
+                }
+            },550)
+        }
+
+
+</script>
+<script>
+
+        var ctx = document.querySelector('#canvas1').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Civil','ME','ECE','CSE','EEE','EIE','IT','Chem'],
+                datasets: [{
+                    label: 'UG Departmental Strength',
+                    data: [287, 319, 354, 371, 255, 223, 227, 214],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 159, 64, 0.7)',
+                        '#2e8690aa',
+                        '#f0fa'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        '#2e8690',
+                        '#f0f'
+                    ],
+                    borderWidth: 1
+                }]
+            }
+        });
+
+        var ctx = document.querySelector('#canvas2').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['SE','EE','PDM','ECE','WC','DCS','IS','EDC','ET','IE','IT','MCA','M.Sc','M.Phil'],
+                datasets: [{
+                    label: 'PG Departmental Strength',
+                    data: [33,22,25,21,16,12,39,16,14,0,6,80,3,1],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 159, 64, 0.7)',
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 159, 64, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            
+        });
+
+
+        var ctx = document.querySelector('#canvas3').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Male','Female'],
+                datasets: [{
+                    label: 'Total strength',
+                    data: [1652,886],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                    ],
+                    borderWidth: 2
+                }]
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>

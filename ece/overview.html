@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Overview</title> <!-- ENTER PAGE TITLE -->
+    <link rel="icon" href="../img/icon.png">
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="apple-touch-icon" href="../img/icons/150px.png" />
+    <link rel="apple-touch-icon" href="../img/icons/300px.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#2e8690" />
+    <meta name="theme-color" content="#2e8690" />
+    <meta name="Description" content="Pondicherry Engineering College (PEC) is an Autonomous Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan.">
+
+    <link rel="stylesheet" type="text/css" href="../css/new-material.css" class="styleload" media="all" disabled>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap4.css" class="styleload" media="all" disabled>
+    <link rel="stylesheet" type="text/css" href="../css/header.css" class="styleload" media="all" diabled>
+    <link rel="stylesheet" type="text/css" href="../css/footer.css" class="styleload" media="all" disabled>
+    <link rel="stylesheet" type="text/css" href="../css/menu.css" class="styleload" media="all" disabled>
+
+    <link rel='dns-prefetch' href='https://maps.googleapis.com'>
+    <link rel='dns-prefetch' href='https://fonts.googleapis.com/' >
+    <link rel='dns-prefetch' href="https://khms1.googleapis.com/">
+
+    <script defer src="../js/jquery.min.js"></script>
+    <script defer src="../js/materialize.min.js"></script>
+    <script defer src="../js/bootstrap4.js"></script>
+    <script defer src="../js/menu.js"></script>
+    <script async src="../js/pace.js"></script>
+
+<!--ADD CUSTOM IMPORTS HERE use convention-->
+    <!-- <link rel="stylesheet" href="enter link" class="styleload" media="all" disabed> -->
+    <!-- <script defer src="enter link"></script> -->
+    <link rel="stylesheet" href="../css/oswald.css" class="styleload" media="all" disabled>
+
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap" class="styleload" media="all" disabled> -->
+
+
+<!--custom imports ends-->
+
+    <style>
+        main{
+            opacity: 0;
+            transition: opacity 3s;
+        }
+        floatbtn{
+            opacity: 0;
+            transition: opacity 3s;
+        }
+        header{
+            opacity: 0;
+            transition: opacity 3s;
+        }
+        footer{
+            opacity: 0;
+            transition: opacity 3s;
+        }
+        .fixed-action-btn {
+            right: 83%;
+            top: 88%;
+            left: 2%;
+            z-index: 4;
+            bottom: 10px;
+        }
+
+        .floatbtn a {
+            width: 200px;
+            border-radius: unset;
+            font-size: 16px;
+            font-weight: 500;
+            color: #000;
+            background-color: #fff;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .floatbtn a:hover {
+            background-color: #2e8690;
+            color: #fff;
+        }
+
+        .fixed-action-btn ul li {
+            margin-bottom: 3px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        #iconbtn:hover{
+            background-color: #ebf3f4;
+        }
+        main {
+            flex: 1;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0.35em;
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #707070;
+            border-radius: 8px;
+            outline: 1px solid #f8f8f8;
+        }
+        /*load progress bar*/
+        .pace {
+          -webkit-pointer-events: none;
+          pointer-events: none;
+
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+
+        .pace-inactive {
+          display: none;
+        }
+
+        .pace .pace-progress {
+          background: #2e8690;
+          position: fixed;
+          z-index: 2000;
+          top: 0;
+          right: 100%;
+          width: 100%;
+          height: 2px;
+        }
+
+        /*ENTER INLINE CONTENT CSS*/
+        .faculty-header{
+            border-top:3px double black;
+            border-bottom:3px double black;
+            font-family: 'Oswald',sans-serif;
+            text-align: center;
+            margin-left:5%;
+            margin-right:5%;
+            padding-top:0px;
+            padding-bottom:0px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .faculty-header h2{
+            margin-top: 10px;
+        }
+        th, td {
+         padding: 7px;
+        }
+        .img-caption{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .row4 p{
+            padding-left:20px;
+        }
+        .notes{
+            font-size: 16px;
+            text-align: justify;
+        }
+        @media (min-width: 920px) {
+            .over{
+                max-width: 90%;
+            }
+        }
+        .row_1{
+            padding-bottom:15px ;
+        }
+        .row2{
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+        }
+        .hr1{
+            border: none;
+            border-bottom: 4px solid #0ea2be;
+            /* padding-top:  3%; */
+            margin-bottom: 3%;
+        }
+
+        .details{
+            background-color: #f8f8f8;
+            padding: 20px;
+            margin-bottom:  20px ;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: left;
+            font-size: 17px;
+            /* display: flex; */
+            /* height: auto; */
+            overflow-x: auto;
+        }
+        p{
+            padding: 2px;
+        }
+
+        .vision, .mission{
+            padding: 20px 25px;
+
+            margin: 0 25px;
+            margin-bottom: 25px;
+            /* border: 1px solid rebeccapurple; */
+            font-size: 16px;
+        }
+
+        .vision h3, .mission h3{
+            font-family: 'Oswald',sans-serif;
+            font-size: 5vh;
+            color: #0ea2be;
+        }
+
+        .mission{
+            background-color: #f8f8f8;
+        }
+        .t1{
+            overflow-x: scroll;
+        }
+
+
+        .dept-fluid-img{
+
+        background-image: url("./img/dept.jpg");
+
+        height: 95%;
+        width: 100%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        }
+        .btn {
+            font-family: Arial, Helvetica, sans-serif;
+            background:#2e8690;
+            color:#fff;
+            border:3px solid #2e8690;
+            display:inline-block;
+            transition:0.5s;
+            padding: 10px 30px 10px 10px ;
+            border-radius: 2px;
+        }
+
+.btn:hover, .btn:active {
+  text-decoration: none;
+  color:#000;
+  border-color:#2e8690;
+  background:transparent;
+  padding:10px 10px 10px 30px;
+}
+        @media (max-width: 500px){
+            .vision, .mission{
+                padding: 10px;
+                margin: 2px;
+            }
+        }
+        /*content css ends*/
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded",function(){
+        var imports = document.querySelectorAll(".styleload");
+        imports.forEach((imp)=>{
+            imp.removeAttribute("disabled");
+        });
+        });
+        </script>
+</head>
+
+<body onload="">
+    <floatbtn class="fixed-action-btn">
+        <a class="btn-floating btn-large" style="background-color: #ffffff">
+            <img src="../img/forward.svg" id="iconbtn" alt="nav">
+        </a>
+        <ul class="floatbtn">
+            <li><a href="./" class="btn-floating">Home</a></li>
+            <li><a href="./notice-updates.php" class="btn-floating">Notice & Updates</a></li>
+            <li><a href="./articles.php" class="btn-floating">Articles</a></li>
+            <li><a href="./overview.html" class="btn-floating">Overview</a></li>
+            <li><a href="./faculty.php" class="btn-floating">Faculty</a></li>
+            <li><a href="./courses.html" class="btn-floating">Courses & Curriculum</a></li>
+        </ul>
+    </floatbtn>
+    <header>
+        <div class="container-dim container-fluid">
+            <div class="row" id="row-top-margin">
+                <a href="http://pec.edu" class="logo-container">
+                    <img class="logo" src="../img/logo.png" alt="logo_image" width="100">
+                </a>
+                <div class="college_name">
+                    <h4 class="college-name-text">Pondicherry</h4><br>
+                    <h4 class="college-name-text">Engineering</h4><br>
+                    <h4 class="college-name-text">College</h4>
+                </div>
+                <div class="dept-name" id="dept-name">
+                    <h4 class="dept-of">DEPARTMENT <i>of</i></h4>
+                    <h4 class="dept-name-text">Electronics and Communication Engineering</h4>  <!--ENTER DEPARTMENT NAME-->
+                </div>
+
+                <div class="search-box" style="position: absolute;top:0px;right: 80px;padding-top: 0px;">
+                    <form>
+                        <input class="search-bar" id="focusChk" type="text" placeholder="Search" style="top: 50px;">
+                        <img src="../img/search.svg" style="margin:33px 10px;" alt="search">
+                    </form>
+                </div>
+
+                <a data-toggle="collapse" href="#collapseMenu" alt="menu">
+                    <div class="container menu-icon" id="overlay" onclick="change()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a>
+                <div class="mob-btn">
+                    <img src="../img/search.svg" data-toggle="collapse" href="#collapseSearch" onclick="focusS()" style="margin-bottom: 10px" alt="search">
+                    <div data-toggle="collapse" class="menu-icon" href="#collapseMenu" onclick="change()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="margin: 0 2%;border-width: 2px;box-shadow: 0 3 6 #0003">
+
+    <div class="collapse" id="collapseSearch">
+        <div style="display:flex;justify-content: center">
+            <input id="focus" type="text" style="padding-left:10px;width: 80%;" placeholder="Enter search text here...">
+        </div>
+    </div>
+
+    <div class="pec-menu collapse" id="collapseMenu">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-3 col-6" id="menu-col-1">
+                    <ul>
+                        <li onclick="location.href='https://peciis.info/PECMIS/';">IIS</li>
+                        <li onclick="location.href='http://tnp.pec.edu/';">Placement</li>
+                        <li onclick="location.href='http://research.pec.edu/';">Research</li>
+                        <li onclick="location.href='../home/admission.html';">Admission</li>
+                        <li onclick="location.href='http://academics.pec.edu/';">Academics</li>
+                        <li onclick="location.href='http://www.pec.edu/alumni.php';">Alumni</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6" id="menu-col-2">
+                    <ul>
+                        <li class="menu2" onclick="location.href='../home/about-pec.html'"; onmouseover="menu(this,'about')">About</li>
+                        <li class="menu2" onclick="location.href='../home/gallery.php'"; onmouseover="menu(this,'gallery')">Gallery</li>
+                        <li class="menu2" onmouseover="menu(this,'oncampus')">On&nbsp;Campus<img src="../img/forward.svg" class="forward" alt=">"></li>
+                        <li class="menu2" onmouseover="menu(this,'departments')">Departments<img src="../img/forward.svg" class="forward" alt=">"></li>
+                        <li class="menu2" onclick="location.href='../home/administration.html'"; onmouseover="menu(this,'administration')">Administration</li>
+                        <li class="menu2" onclick="location.href='http://www.teqip.pec.edu/'"; onmouseover="menu(this,'teqip')">TEQIP</li>
+                    </ul>
+                </div>
+                <div id="menu2-cover"> <button onclick="goBack()"> <img src="../img/go-back.svg" alt="go-back" > </button> </div>
+                <div class="col-lg-3 col-6" id="menu-col-3">
+                    <p class="menu-about">Pondicherry Engineering College (PEC) is an Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan. It is an autonomous Institution for the purposes of administration,
+                        staff recruitment and college development and is managed by a Board of Governors.</p>
+                </div>
+                <div class="col-lg-3 col-6" id="menu-col-4">
+                    <img class="aboutimg" src="../img/about.jpg" alt="college-img" style="width:18vw">
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <main>
+        <!--ENTER MAIN CONTENT HERE-->
+
+        <div class="faculty-header">
+            <h2>Overview</h2>
+    </div>
+        <div class="container-fluid over">
+            <div class="row row_1">
+                <div class="col-md-2 photo">
+                    <h3 class="text-center" style="font-family: 'Oswald',sans-serif;color: #0ea2be;">HOD's Message</h3>
+                    <div class="text-center" style="padding:15px 0px;">
+                        <img src="img/ecehod.png" alt="faculty-image" width="140px" height="140px">
+                        <div class="img-caption">
+                            <h4>Dr. G. Florence Sudha</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-5 notes" >
+                    Welcome to the Dept. of Electronics and Communication Engineering! It gives me great pleasure to introduce the Dept. of
+                    Electronics and Communication Engineering.
+                    The Dept. of Electronics and Communication Engineering,
+                     Pondicherry Engineering College was established right from the inception of the institute in 1985.  It has a strong
+                     undergraduate programme in Electronics and Communication Engineering including a B.Tech, M.Tech in Electronics and
+                      Communication Engineering and Wireless Communication and Ph.D degrees. The principal mission of the department is to
+                      formulate a very strong foundation in the various aspects of Electronics and Communication and provide training in the
+                      contemporary areas such as VLSI, Embedded system, Wireless communication, IOT etc.
+                    The Department has a dedicated team of faculty members with 11 Professors, 3 Associate professors and 3 Assistant Professors.
+                    I am proud to mention that all faculty of this illustrious department are Doctorates and have specialized in key research
+                    areas such as Signal Processing, Image processing, Wireless Communication, Optical Networks, Biomedical engineering,
+                    Information security and VLSI.Through these faculty members, the students are able to obtain strong fundamentals and
+                    excellent analytical training.  The department is ably supported by technical staff consisting of Senior instructors,
+                     mechanics and lab attendants who assist the faculty and students.
+                    Keeping in mind, the tremendous and fast growth in the areas of Wireless communication and VLSI, curriculum revision is carried
+                    t every 4-5 years and last curriculum updation was done in 2018.  An innovative syllabus based on AICTE model curriculum has been
+                     framed. The students are given opportunity to obtain a Honours degree or Minor degree in their chosen specialization area. The
+                     students also have the opportunity to go for internship in their last semester to companies of their choice and get a hands-on
+                     experience with industry trends and be placed in the firms. The department has been able to receive funds from external agencies such as TEQIP, AICTE and DST to setup state-of-the-art
+                     laboratories ranging from standard test equipment for the basic laboratories as well as high-end equipment such as Spectrum
+                     analysers, Vector network analysers, Microwave test benches, National Instruments Labview WSN platform, and Fibre optic test kits.
+                     in addition, the Freescale Semiconductors’' Embedded systems laboratory has been established as an MOU with Freescale Semiconductors
+                    and E-yantra robotics Lab from IIT Mumbai are established in the department to provide the latest technologies to the students.
+
+
+
+
+                </div>
+                <div class="col-md-5 notes" >
+
+
+                    The Department also has adequate Computing facilities for UG and PG students. Hence, students of this department have the unique
+                    opportunity to augment all theoretical concepts with laboratory training.
+                    Two annual events are distinctive to the Dept. of Electronics and Communication Engineering.  One is the VSNL sponsored panel
+                     discussion conducted every year centered on topics of recent interest. Panelists from industry and academics are invited and share
+                     their knowledge on the latest advancements in their field.     Another exclusive event, special only to the Dept. of Electronics
+                     and Communication Engineering is the Above and Beyond Awards, sponsored by renowned alumni of the Electronics and Communication
+                     Engineering Dept., Mr. V. Aroumugam and Mr. V. Muthukumaravelou. Every year this award is distributed to students achieving
+                     excellence in academic performance as well as innovative design project. The award involves a citation as well as cash awards.
+                    Students of the department are also encouraged to organize workshops, and technical symposiums such as Genesis and EnC Info,
+                    to impart in them organizational and management skills which is very important for their overall development.  In addition,
+                    students are encouraged to participate in technical and nontechnical events organized in other institutes to get exposure in
+                    interdisciplinary fields. The Dept also brings out ECE Tabloid, a department newsletter every semester in which the department
+                     activities are published.
+                    The Department has continuously progressed over the years and has been bringing out quality B.Tech and M.Tech engineers who are
+                    sought after by leading industrial organizations all over the world. Consistently through these years, students of Electronics
+                    and Communication Engineering have obtained good placement in campus interviews.  In addition, students have also undertaken higher
+                    studies in India and abroad and the Electronics and Communication Engineering department is proud of its alumni who occupy key
+                     positions in global organizations such as Microsoft, Apple, Qualcomm, Bosch, HP, Intel, Siemens, to name a few.  The Department
+                      has an excellent track record and has been growing in strength with strong alumni base and fresh student talents over the years.
+                    With this short introduction, I welcome you to be a part of our journey to achieve the vision of excellence in teaching, training and research.
+                </div>
+            </div>
+            <hr class="hr1">
+            <div class="row row2">
+                <div class="col-sm-6 col-md-7">
+                    <div class="details ">
+                        <div class="container1">
+                            <p >Year of establishment ..........<b> 1985</b></p>
+                            <p>No. of faculty .......... <b>17</b></p>
+                            <p>No. of faculty with doctorial degrees .......... <b>17</b></p>
+                            <p>No. of supporting staffs .......... <b>07</b></p>
+                            <p> <b>Programmes offered and intake:</b> </p>
+                            <table border="1" class="table table-stripped table-borded table-hover">
+                                <tr>
+                                    <th>S.No.</th>
+                                    <th>Title of the Programs</th>
+                                    <th style="text-align:center">Duration</th>
+                                    <th style="text-align:center">Year of starting</th>
+                                    <th style="text-align:center">Intake</th>
+                                </tr>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>B.Tech.</td>
+                                    <td style="text-align:center">4</td>
+                                    <td style="text-align:center">1985</td>
+                                    <td style="text-align:center">60</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>B.Tech.(Self supporting)</td>
+                                    <td style="text-align:center">4</td>
+                                    <td style="text-align:center">2019</td>
+                                    <td style="text-align:center">60</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>M.Tech.-Electronics & Communication Engineering</td>
+                                    <td style="text-align:center">2</td>
+                                    <td style="text-align:center">1990</td>
+                                    <td style="text-align:center">24</td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>M.Tech.-Wireless Communication</td>
+                                    <td style="text-align:center">2</td>
+                                    <td style="text-align:center">2006</td>
+                                    <td style="text-align:center">16</td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td>Doctor of Philosophy (Ph. D)</td>
+                                    <td style="text-align:center">-</td>
+                                    <td style="text-align:center">-</td>
+                                    <td style="text-align:center">-</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-sm-6 col-md-5" >
+                    <div class="dept-fluid-img" >
+                        <!-- <img src="img/dept.jpg" alt="department-image" > -->
+                    </div>
+                </div>
+                <div class=" col-sm-12 col-md-12 text-right">
+                    <button class="btn" onclick="window.location.href='../home/gallery.php'">GALLERY &rightarrow; </button>
+                </div>
+                <!-- <div class="col-sm-12 text-right quick-links"><li><a href="" class="btn"><span class="btn-label">Gallery</span></a></li></div> -->
+
+            </div>
+
+            <hr class="hr1">
+
+            <div class="row row3">
+                <div class="col-md-6" >
+                    <div class="vision">
+                        <h3>VISION</h3>
+                        To produce globally comp and socially sensitized engineering graduates and to bring out quality
+                        research in the frontier areas of Electronics and Communication Engineering
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="mission">
+                        <h3>MISSION</h3>
+                        To provide quality and contemporary education in the domain of Electronics and Communication Engineering through periodically updated curriculum, best-of-breed laboratory facilities,
+                        collaborative ventures with industries and effective teaching-learning process
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr1">
+
+            <div class="row row3">
+                <div class="vision">
+                    <center><h3>FACILITIES</h3></center><br><p></p>
+
+                </div>
+            </div>
+
+        <div class="row row3 t1">
+            <table class="table table-stripped table-borded table-hover">
+                <tr>
+                    <th>S.No.</th>
+                    <th>Facility and Equipments</th>
+                    <th>Courses/Resources</th>
+                    <th> Details</th>
+
+                </tr>
+                <tr>
+                    <td rowspan="3" >1.</td>
+                    <td rowspan="3">Advanced Communication Laboratory</td>
+                    <td>Microwave and Optical Communication Lab </td>
+                    <td><p>The objective of this lab is to familiarise the students with microwave and optical
+                        communication techniques/technologies in microwave communication. The students study the
+                        operation and characteristics of microwave sources such as klystron and Gunn diodes, load
+                         impedance and standing wave measurements, antenna gain and radiation pattern measurements.
+                         Optical communication
+                        deals with the study of the characteristics of the optical fibre and also analog and digital
+                        fibre links using LED and LASER sources.</p> </td>
+
+                </tr>
+
+                <tr>
+                    <td>Wireless Communication Lab </td>
+                    <td>This lab is an advancement of the Microwave and Optical Communication lab where the students perform experiments using
+                        advanced equipment such as the vector network analyser, spectrum analyser, DSO, DTA and RCA.
+                        Wireless Sensor Network nodes in NI Labview platform are available to conduct the experiments as per the curriculum and beyond.</td>
+                </tr>
+                <tr>
+                    <td>Advanced Communication System And Networks Lab - M.Tech(ECE) <br>
+                        Wireless Communication And Networking LAB-M.Tech(WC)
+                    </td>
+                    <td>This lab course for M.Tech students teaches the students on microwave sources and devices, optical fibre and characteristic and design of microwave and optical fibre communication links.
+                        Students are also trained to handle and perform experiments using advanced equipment available in the lab.</td>
+                </tr>
+
+                <tr>
+                    <td>2.</td>
+                    <td>High Performance Communication Lab</td>
+                    <td colspan="3"><p>Facility created for design and analysis of wireless communication systems using advanced testing equipment’s like Spectrum Analyser, CDMA Trainer, High frequency DSO and OFDM trainer kit and Special simulation tools NetSim and QUALNET (Research license)
+                        are available along with latest configuration desktop PC’s with internet connectivity for Research and project works. </p></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">3.</td>
+                   <td rowspan="2">U.G. Simulation Lab
+                    <p>Computer Facilities</p>
+                    <div>
+                        <li>
+                            HCL System with Intel core2Duo Processor,
+                            3GB RAM, Gigabyte G31M-ES2L Motherboard, DVD writer, LCD Monitor, 320GB Hard Disk with XP,
+                            LINUX and MATLAB installed -12Nos
+
+                        </li>
+                        <li>
+                            HCL System with Pentium4 Processor 3.00GHz,512MB RAM, ASUSTEK P5GD2-TVM/GB/SI Motherboard,
+                             CD writer, HCL Monitor, 80GB Hard Disc with XP and MATLAB installed -4Nos
+
+                        </li>
+                        <li>
+                             HCL System with Celeron Processor 2.80GHz,256MB RAM, ASUSTEK P5GD2-TVM/GB/SI Motherboard,
+                             CD writer, HCL Monitor,80GB Hard Disc with XP and MATLAB installed   -1No
+                        </li>
+                        <li>
+                            HCL System with XEON Processor, 1GB RAM, ASUSTEK, CD writer, HCL Monitor,80GBx2
+                             Hard Disc with XWINDOW7 and MATLAB installed -1No
+                        </li>
+                        <li>
+                            NUMERIC 5KVA online UPS with 60 minutes back up.
+                        </li>
+                        <li>
+                            16port Switch
+                        </li>
+                        <li>8port Switch   </li>
+                        <li>8Mbps Broadband Internet</li>
+                        <li>TMS3206745 DSP Kit – 5 10Nos with inbuilt function generator, ADC, DAC interface</li>
+                        <li>LAN Trainer Kit</li>
+                    </div>
+                </td>
+                <td>Digital Signal Processing Lab</td>
+                <td>The objective of this lab is to familiarise the students with Matlab Software and Digital Signal Processing Kits.
+                    The students perform experiments on convolution, correlation, verification of sampling theorem, sampling and effects of aliasing,
+                    FIR filter design using various window techniques, IIR filter design using impulse and bilinear transformation
+                    techniques and multi-rate filter design. Further students also verify the practical results using TMS320C6745 DSP Kit.</td>
+
+                </tr>
+                <tr>
+                    <td>Communication Networks Lab</td>
+                    <td>Matlab Software, NetSim and LAN trainer Kits are available to conduct experiments as per the curriculum.</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">4.</td>
+                    <td rowspan="2">Freescale Systems Lab
+                        <p>
+                            This lab has been established as a collaborative venture between Pondicherry Engineering College
+                            and M/S Freescale Semiconductors. India Pvt. Ltd. in accordance with the MoU signed during September,
+                            2008. Freescale Semiconductors has donated ninety development tools which include Hardware and Software
+                             Robotics platform are also available for learning beyond the curriculum.The Embedded system Lab is provided with 35 Nos.
+                             latest configuration computer system with Internet connectivity to enable the learning process.
+                        </p>
+                        <p>EQUIPMENTS AVAILABLE</p>
+                        <li>HCL Infinity Desktop – 25 Nos.
+                            Intel core2duo Processor@2.66Hz, 3MB Cache, 2x2GB DDR2 RAM, 320GB Sata Hard Disc and Accessories.
+                        </li>
+                        <li>
+                            Lenovo Desktop – 10 Nos.Intel core2duo Processor@2.66Hz, 3MB Cache,
+                            2x4GB DDR2 RAM, 320GB Sata Hard Disc and Accessories.
+
+                        </li>
+                        <li>Development Tools
+                            <div style="padding-left: 20px;">
+                                MCU 16Bit Hcs 12 application module students Learning kit<br>
+                                MCU Project Board<br>
+                                MCU 32Bit Cold fire Student learning kit<br>
+                                symphony DSP Development Kit<br>
+                                FPGA Application module student Learning Kit <br>
+                                ZIGBEE Application module students learning Kit
+                            </div>
+                        </li>
+                        <li>Numeric 5KVA Online UPS with 60min Backup</li>
+                        <li>Xilinx Spartan 6 FPGA Kit – 5 Nos.</li>
+                        <li>Cadence Software – 10 user License </li>
+                        <li>TannerEDA Tool – 1 user Perpetual License</li>
+                        <li>Robotics Platform funded by TEQIP Phase - II</li>
+
+                    </td>
+                    <td>Embedded Systems Lab</td>
+                    <td>Advanced microcontrollers like Freescale (16 bit and 32 bit) with Codewarrior software enabling
+                         C programming and ARM-KL25 kits are available in the Embedded System Lab to conduct experiments as per the curriculum.
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>VLSI Design Lab</td>
+                    <td><p>
+                        Students use Xilinx ISE 14.7 software and Spartan6 FPGA Kits to verify the functionality of the design and generate the RTL schematic.
+                         Using TannerEDA tool software students learn the layout generation and perform design rule check.
+                    </p></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">5.</td>
+                    <td rowspan="3">Communication Laboratory</td>
+                    <td>Analog Communication Laboratory</td>
+                    <td>
+                        <p>Students construct and analyse circuits on analog communication transmitter and receiver.
+                         The students conduct experiment to understand the signals available at different stages of AM and FM receivers.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Digital Communication Laboratory</td>
+                    <td><p>
+                        The objective of this course is to familiarise the students with different blocks in digital
+                        communication different digital communication. Different digital modems and codecs are constructed and tested.
+                    </p></td>
+
+                </tr>
+                <tr>
+                    <td>Circuits and Networks Lab</td>
+
+                    <td><p>
+                        Different types of network elements like filters, attenuators and equalisers are constructed
+                        and tested to understand their working principles in time and frequency domains.
+                         Prototype transmission lines are analysed to understand their time and frequency behaviour
+                    </p></td>
+                </tr>
+
+               <tr>
+                   <td>6.</td>
+                   <td>Innovation Design/Research Scholar Lab
+                       <p>Computational facility available</p>
+                   </td>
+                   <td colspan="2">
+                       <p>The research facilities are provided with adequate number of computers with licensed software such as MATLAB,
+                           Pspice, Xilinx, QUALNET, NETSIM LABVIEW and Modelsim. The high-end test and measuring equipments such as Vector
+                           Network Analyser, Spectrum Analyser, DSO with High frequency waveform generator, OTDR and Optical Spectrum Analyser are
+                           available to carry out the hardware projects.
+                            In addition all the labs are provided with computer and internet connectivity</p>
+                   </td>
+               </tr>
+
+               <tr>
+                   <td rowspan="2">7.</td>
+                   <td rowspan="2">Electronic Devices Laboratory</td>
+                   <td>Electronics Devices Lab</td>
+                   <td><p>
+                    The primary objective of the lab is to serve as a platform for understanding the operating principles
+                     of electron devices through experiments and also to study their characteristics.
+                   </p></td>
+               </tr>
+               <tr>
+                   <td>
+                       Digital Circuits Design Lab
+                   </td>
+                   <td><p>
+                    The lab is intended for sophomores for practising their theoretical knowledge by designing.
+                     Constructing and testing the combinational as well as sequential digital circuits.
+                   </p></td>
+               </tr>
+
+               <tr>
+                   <td rowspan="2">8.</td>
+                   <td rowspan="2">Electronics Circuits Laboratory</td>
+                   <td>Electronics Devices and Networks Lab</td>
+                   <td><p>The students are offered hands-on experience in designing, constructing and testing the analog electronics circuits.
+                       The students design the circuits, solder them and then test the performance experimentally. This lab nurtures all the skills
+                        that are essential to design and test advanced electronics and communication circuits. The students also validate the experimental results using PSpice computer simulator.
+
+                </p></td>
+               </tr>
+               <tr>
+                   <td>Electronics Circuits Design Lab</td>
+                   <td><p>
+                    This laboratory course is an advanced extension of Electronics circuits lab-I. The students design advanced analog
+                    and pulse circuits. They construct the circuit and test them. This lab builds the confidence of the students to design
+                    the advanced electronic circuits. The students study the impact of various design
+                    parameters on the performance of the circuits using PSpice computer simulator.
+                   </p></td>
+               </tr>
+               <tr>
+                   <td>9.</td>
+                   <td>Wireless Communication Laboratory</td>
+                   <td colspan="2">
+                       <p>Wireless Communication lab has been created for design and analysis of wireless communication systems using advanced testing equipments.
+                            Special simulation tools NetSim and QUALNET (Research license) are available along with latest
+                           configuration desktop PC’s with internet connectivity for Research and project works. </p>
+                   </td>
+               </tr>
+               <tr>
+                   <td>10.</td>
+                   <td>Seminar Hall</td>
+                   <td colspan="2">
+                       <p>
+                        The seminar hall of the dept. of ECE is a well-furnished, air-conditioned hall with a good ambience suitable for official gatherings.
+                         It can handle a maximum capacity of 100 members and has built in state-of-the-art facilities as listed below
+                       </p>
+                       <div style="padding-left: 20;">
+                           <li>Wall-Mounted Multimedia Projector</li>
+                           <li>Overhead Projector</li>
+
+                           <li>Podium</li>
+                           <li>Public Addressing Systems(Microphone,Amplifier,Speakers)</li>
+
+                       </div>
+                   </td>
+               </tr>
+               <tr>
+                   <td>11.</td>
+                   <td>Smart Class Room</td>
+                   <td colspan="2"><p>
+                    The smart class room of the dept. of ECE is a well-furnished, air-conditioned hall with a good ambience suitable for official gatherings.
+                    It can handle a maximum capacity of 100 members and has built in state-of-the-art facilities as listed below
+                   </p>
+                   <div>
+                       <li>Black/White Board</li>
+                       <li>Smart board</li>
+                       <li>Internet</li>
+                       <li>Multi Media projector</li>
+                       <li>OHP</li>
+                       <li>Chair/Benches & Podium</li>
+                       <li>PA system </li>
+                   </div>
+                </td>
+               </tr>
+               <tr>
+                   <td>12.</td>
+                   <td>Department Library</td>
+                   <td colspan="2">
+                       <div>
+                           <li>Number of Books:-318</li>
+                           <li>Number of Journals/Periodicals:-134  </li>
+                           <li>Number of Technical Papers:-143</li>
+                           <li>Number of M.Tech Thesis:-420</li>
+                           <li>Number of B.Tech Project Reports:-272</li>
+                           <li>Number of M.Tech Credit Seminar Reports:-174</li>
+                           <li>Number of Ph.D Dissertations:-2</li>
+                           <li>Number of Conference Proceedings:-3</li>
+                           <li>Number of Industrial Visit Reports:64	</li>
+                       </div>
+                       Total Volume:1530
+
+
+
+
+
+
+
+
+
+
+                       </p>
+                   </td>
+               </tr>
+
+            </table>
+        </div>
+
+        <hr class="hr1">
+
+        <div class="row row3">
+            <div class="vision">
+                <center><h3 >SCHOLARSHIP AND AWARD PROVISION</h3></center> <br><p></p>
+               <li><b>Above and Beyond Award</b>
+                <div style="padding-left: 20px;">
+                    <p>To the IV B.Tech (ECE), III B.Tech (ECE) & II B.Tech (ECE) students who have secured First and
+                        second ranks in III B.Tech., II B.Tech., &I B.Tech. Examinations respectively. Awards instituted by
+                        Mr. V. Arumugam, a 1991 batch alumnus and  Mr. V. Muthukumar, a 1994 batch alumnus
+                    </p>
+                    <div>
+                        Each of the two first rank holders will get a cash prize of Rs.10,000<br>
+                        Each of the two second rank holders will get a cash prize of Rs.5,000
+
+                    </div>
+                </div>
+
+               </li>
+               <li><b>Above and beyond explorer award</b>
+                   <div style="padding-left:20px;">
+                    <p>B.Tech(ECE) students for the best hardware working model. This award is being hosted from the academic year 2017-18.
+                        Awards instituted by Mr. V. Arumugam, a 1991 batch alumnus and Mr. V. Muthukumar, a 1994 batch alumnus.
+                    </p>
+                    <p>
+                        Students will be awarded with a cash prize of Rs.25,000/- for the best hardware working model.
+                    </p>
+
+                   </div>
+               </li>
+            </div>
+        </div>
+
+        <hr class="hr1">
+        <div class="row row3">
+            <div class="vision">
+                <center><h3 >STUDENT'S COUNCIL ACTIVITIES</h3></center> <br><p></p>
+                <li>
+                    <b>EnC Info</b>
+                    <p>It is the annual Magazine of the Department brought out by the students of department, with a supplementary DVD.
+                         The magazine features various technical articles highlighting the advancements in the field of Electronics and Communication.
+                         It also features non-technical articles like art, puzzles, etc. The DVD contains educational materials like e-books,
+                        simulation software and useful links to build a professional career, along with an assortment of another computer freeware.</p>
+                </li>
+                <li>
+                    <b>Student's Council</b>
+                    <p>The department has its own students' council organising various conferences, Workshops and seminars on the cutting-edge technologies to
+                         provide the students with a unique opportunity to keep in touch with the latest trends in the domain. The Council also encourages students
+                         to conduct various Online and Offline events so
+                         as to help them gather a good raport with the staff and fellow students.</p>
+                </li>
+                <li>
+                    <b>ECE Tabloid</b>
+                    <p>This is a bimonthly newsletter of the Department brought out by the final year students. It focuses on the advancements and inventions
+                         in the field of Electronics and Communication, recent trends in technologies, apart containing articles of the students and information about
+                          prizes and awards won by the students in extra-curricular,
+                        co-curricular and inter-collegiate events.</p>
+                </li>
+                <li>
+                    <b>GENESIS</b>
+                    <p>GENESIS is an All India Inter Collegiate Technical Symposium which is being conducted once in four years.
+                        This symposium gives the feel of the technical awareness existing in other universities and colleges and brings the young minds together.
+                         It provides an exciting forum to the young minds across the country to put out the best of their expertise and skills. In addition to
+                         technical presentation, there are number of other technical, non-technical and fun events. The technical paper presentation covers the
+                         various areas of Electronics and Communication Engineering such as wireless communication, computer & optical networks, signal & image
+                         processing, robotics, biomedical, VLSI, Embedded Systems, etc.
+                        Around 50 colleges participate in various events of GENESIS.</p>
+                </li>
+
+            </div>
+        </div>
+        <hr class="hr1">
+
+    </div>
+
+        <!--main content ends-->
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row row-footer-1">
+                        <div class="col-sm-7 col-md-4 col-lg-3 col-xl-3 col-footer-1">
+                            <div class="google-maps">
+                                <iframe title="Google Map" src="https://maps.google.com/maps?q=pondicherry%20engineering%20college&t=&z=13&ie=UTF8&iwloc=&output=embed" width="400" height="280" frameborder="0" style="border:0"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-md-3 col-lg-3 col-xl-3 col-footer-1">
+                            <p class="pp">Pondicherry Engineering College </p>
+                            <p class="pp">Pillaichavadi,</p>
+                            <p class="pp">Puducherry,</p>
+                            <p class="pp">India-605014</p>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 col-footer-1">
+                            <p class="pp">Ph (+91)0413-2655281</p>
+                            <p class="pp">FAX (+91)0413-2655101 </p>
+                            <p class="pp">E-Mail info@pec.edu</p>
+                            <div class="social_icon">
+                                <a href="https://www.facebook.com/PEC.Pondicherry" target="_blank" rel="noreferrer">
+                                    <img src="../img/facebook-square-brands.svg" href=" " class="icons" height="36" width="36" alt="Facebook"></a>
+                                <a href="https://www.linkedin.com/school/pondicherry-engineering-college/" target="_blank" rel="noreferrer">
+                                    <img src="../img/linkedin-brands.svg" class="icons" height="36" width="36" alt="LinkedIn"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 hidden-sm-md col-lg-1 col-xl-2 col-footer-1"></div>
+                        <div class="col-sm-6 col-md-2 col-lg-2 col-xl-2 col-footer-1 padding_remove">
+                            <button class="contact" onclick="window.location.href='../home/contact-us.html'">CONTACT&nbsp;US</button>
+                            <div class="dotted_bordered">
+
+
+                                <p class="pp">General enquiry</p>
+                                <p class="pp">Ragging helpline</p>
+                                <p class="pp">Grievance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-2">
+                        <div class="container-fluid tb1">
+                            <div class="nested-footer-2 tb2">
+                                <div class="row row-footer-2">
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a alt="pec" href="http://pec.edu/" target="blank">
+                                            <p class="link-footer-2">Old&nbsp;Site</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a alt="iedc" href="https://www.peciedc.com/" target="blank">
+                                            <p class="link-footer-2">IEDC</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a alt="nirf" href="https://www.nirfindia.org/" target="blank">
+                                            <p class="link-footer-2">NIRF</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a href="../home/sitemap.html">
+                                            <p class="link-footer-2">Sitemap</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a href="../home/about-us.html">
+                                            <p class="link-footer-2">About Site</p>
+                                        </a>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-2 text-center col-footer-2">
+                                        <a href="../home/disclaimer.html">
+                                            <p class="link-footer-2">Disclaimer</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems, {
+                direction: 'top',
+                hoverEnabled: false
+            });
+        });
+        let icon = document.getElementById('iconbtn').style;
+        iconbtn.addEventListener('click', () => {
+            if(icon.transform != "rotate(90deg)")
+                icon.transform = "rotate(90deg)";
+            else
+                icon.transform = "rotate(-90deg)";
+        });
+    </script>
+
+</body>
+
+</html>
